@@ -8,7 +8,7 @@ echo 'alias trtexec="/usr/src/tensorrt/bin/trtexec"' >> ~/.bashrc
 source ~/.bashrc
 
 # -- install nvidia-container
-sudo apt install nvidia-container
+sudo apt-get install nvidia-container-toolkit
 sudo systemctl restart docker
 sudo usermod -aG docker $USER
 newgrp docker
